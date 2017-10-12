@@ -53,7 +53,7 @@ public class ToUpperCaseProcessorTests {
 	@Autowired
 	private MessageCollector collector;
 
-//	@SpyBean
+	@SpyBean
 	private ToUpperCaseProcessor toUpperCaseProcessor;
 
 	@Test
@@ -70,7 +70,7 @@ public class ToUpperCaseProcessorTests {
 		assertThat(messages, receivesPayloadThat(is("FOO MEETS BAR")));
 		assertThat(messages, receivesPayloadThat(not("nothing but the best test")));
 
-//		verify(this.toUpperCaseProcessor, times(4)).transform(anyString());
+		verify(this.toUpperCaseProcessor, times(4)).transform(anyString());
 	}
 
 

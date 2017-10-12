@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.stream.demo.processor.integration;
+package org.springframework.cloud.stream.testing.processor.integration;
 
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -31,7 +31,7 @@ import org.junit.runner.RunWith;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.cloud.stream.demo.processor.ToUpperCaseProcessor;
+import org.springframework.cloud.stream.testing.processor.ToUpperCaseProcessor;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.test.rule.KafkaEmbedded;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.stream.demo.processor;
+package org.springframework.cloud.stream.testing.processor;
 
 import static org.junit.Assert.assertEquals;
 

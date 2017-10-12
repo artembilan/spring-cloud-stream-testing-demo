@@ -14,8 +14,9 @@
  * limitations under the License.
  */
 
-package org.springframework.cloud.stream.demo.processor;
+package org.springframework.cloud.stream.testing.processor;
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
@@ -34,6 +35,10 @@ public class ToUpperCaseProcessor {
 	@SendTo(Processor.OUTPUT)
 	public String transform(String payload) {
 		return payload.toUpperCase();
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(ToUpperCaseProcessor.class, args);
 	}
 
 }
